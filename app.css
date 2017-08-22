@@ -1,0 +1,79 @@
+/*-- Structure --*/
+.wrapper {
+  width: 1040px;
+  margin: auto;
+}
+
+
+/*-- Box Model --*/
+*,
+*:before,
+*:after {          
+   box-sizing: border-box;
+}
+
+/*-- Font styles --*/
+
+p, body {
+  font-family: arial;
+  font-size: 12px;
+  display: block;
+  margin-bottom: .5em;
+}
+
+/*-- Global Styles --*/
+
+.row {
+  border: 1px dashed #000;
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.col-1 {
+  display: inline-block;
+  width: 47px;
+  height: 30px;
+  border: 1px solid #000; 
+  text-align: center;
+}
+
+.col-4 {
+  width: 324px;
+  height: 100px;
+  vertical-align: top;
+}
+
+.col-6 {
+  width: 486px;
+  height: 100px;
+}
+
+.col-8 {
+  width: 648px;
+  height: 200px;
+}
+
+
+/*-- Box Styles --*/
+
+.col-4, .col-6, .col-8 {
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000; 
+  text-align: center; 
+  box-sizing: border-box;
+}
+
+
+
+/*-- Clearfix --*/
+
+.row:after,
+.wrapper:after
+.column:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
